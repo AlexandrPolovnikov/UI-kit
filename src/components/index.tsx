@@ -1,0 +1,10 @@
+import PlainButton from "../../ui-kit/src/buttons/plain-button/index";
+import TagButton from "../../ui-kit/src/buttons/tag-button/index";
+import ToggleButton from "../../ui-kit/src/buttons/toggle-button/index";
+import CheckboxInput from "../../ui-kit/src/inputs/checkbox-input/index";
+import NumberInput from "../../ui-kit/src/inputs/number-input/index";
+import PasswordInput from "../../ui-kit/src/inputs/password-input/index";
+import PhoneInput from "../../ui-kit/src/inputs/phone-input/index";
+import RadioInput from "../../ui-kit/src/inputs/radio-input/index";
+import SearchInput from "../../ui-kit/src/inputs/search-input/index";
+export { PlainButton, TagButton, ToggleButton, CheckboxInput, NumberInput, PasswordInput, PhoneInput, RadioInput, SearchInput };

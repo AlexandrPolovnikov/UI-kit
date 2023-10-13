@@ -1,0 +1,63 @@
+@import "../../styles/colors.scss";
+@import "../../styles/sizes.scss";
+
+.tag_button {
+	display: grid;
+	place-content: center;
+	height: 36px;
+	width: fit-content;
+	padding: 8px 16px;
+	background-color: $blue-200;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	outline: 2px solid transparent;
+	transition: all $time;
+	cursor: pointer;
+	@media screen and (max-width: $tablet) {
+		border-radius: 4px;
+	}
+
+	* {
+		cursor: pointer;
+	}
+
+	&:focus {
+		background-color: $blue-500;
+		outline-color: $focus;
+
+		.button__text {
+		}
+	}
+
+	.button__text {
+		font-size: 14px;
+		line-height: 20px;
+		color: #333333;
+	}
+
+	.red__dot {
+		height: 7px;
+		width: 7px;
+		background-color: $red-400;
+		border-radius: 50%;
+	}
+}
+
+.button__active {
+	background-color: $blue-500;
+
+	.button__text {
+		color: $white-100;
+	}
+}
+
+.notified {
+	align-items: start;
+	grid-auto-flow: column;
+	gap: 2px;
+	background-color: $blue-200;
+
+	.button__text {
+		color: #333333;
+	}
+}

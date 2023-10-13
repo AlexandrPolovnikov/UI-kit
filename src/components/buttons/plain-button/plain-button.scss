@@ -1,0 +1,220 @@
+@import "../../styles/colors.scss";
+@import "../../styles/sizes.scss";
+
+.plain__button {
+	display: grid;
+	place-content: center;
+	height: 50px;
+	width: 100%;
+	transition: all 0.5s;
+	border-radius: 6px;
+	outline: 1px solid transparent;
+	cursor: pointer;
+	padding: 0 20px;
+	* {
+		cursor: pointer;
+	}
+}
+
+.primary {
+	background-color: $violet-400;
+	color: $white-100;
+	outline-color: $violet-400;
+
+	&:hover {
+		background-color: $violet-500;
+	}
+
+	&:focus {
+		background-color: $violet-500;
+		outline: 2px solid $focus;
+	}
+
+	&:active {
+		background-color: $violet-600;
+	}
+
+	&:disabled {
+		background-color: $violet-200;
+		outline-color: $violet-200;
+		cursor: no-drop;
+		* {
+			cursor: no-drop;
+		}
+	}
+	svg path {
+		stroke: $white-100;
+	}
+}
+
+.secondary {
+	color: $violet-400;
+	background-color: $violet-200;
+
+	&:hover {
+		outline-color: $violet-400;
+	}
+
+	&:focus {
+		outline: 2px solid $focus;
+	}
+
+	&:active {
+		outline-color: $violet-400;
+	}
+
+	&:disabled {
+		color: $white-100;
+		outline-color: $violet-200;
+		cursor: no-drop;
+		* {
+			cursor: no-drop;
+		}
+	}
+}
+
+.tertiary {
+	color: $violet-400;
+	background-color: $white-100;
+
+	&:hover {
+		background-color: $violet-100;
+	}
+
+	&:focus {
+		background-color: $violet-100;
+		outline: 2px solid $focus;
+	}
+
+	&:active {
+		background-color: $violet-100;
+	}
+
+	&:disabled {
+		color: $gray-100;
+		background-color: $violet-100;
+		outline-color: $violet-100;
+		cursor: no-drop;
+		* {
+			cursor: no-drop;
+		}
+	}
+}
+
+.quaternary {
+	background-color: $red-200;
+
+	svg {
+		path {
+			fill: $red-400;
+		}
+	}
+
+	&:hover {
+		outline-color: $red-400;
+	}
+
+	&:focus {
+		outline: 2px solid $focus;
+	}
+
+	&:active {
+		outline-color: $red-400;
+	}
+
+	&:disabled {
+		background-color: $red-100;
+		outline-color: $red-100;
+		cursor: no-drop;
+		* {
+			cursor: no-drop;
+		}
+
+		svg {
+			path {
+				fill: $red-200;
+			}
+		}
+	}
+}
+
+.quinary {
+	background-color: $red-400;
+
+	svg path {
+		fill: $white-100;
+		stroke: $white-100;
+	}
+
+	&:hover {
+		background-color: $red-500;
+	}
+
+	&:focus {
+		background-color: $red-500;
+		outline: 2px solid $focus;
+	}
+
+	&:active {
+		background-color: $red-500;
+	}
+
+	&:disabled {
+		background-color: $red-100;
+		outline-color: $red-100;
+		cursor: no-drop;
+		* {
+			cursor: no-drop;
+		}
+
+		svg {
+			path {
+				fill: $red-200;
+			}
+		}
+	}
+}
+
+.large {
+	height: 64px;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.normal {
+	height: 56px;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.medium {
+	height: 48px;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.small {
+	height: 40px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.extraSmall {
+	height: 32px;
+	font-size: 14px;
+	line-height: 20px;
+
+	svg {
+		width: 16px;
+		height: 16px;
+	}
+}
+
+.with__icon {
+	grid-auto-flow: column;
+	align-items: center;
+	gap: 8px;
+
+	.left__icon {
+	}
+}

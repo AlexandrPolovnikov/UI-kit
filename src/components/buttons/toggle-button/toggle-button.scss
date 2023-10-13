@@ -1,0 +1,69 @@
+@import "../../styles/colors.scss";
+@import "../../styles/sizes.scss";
+
+.toggle__button {
+	cursor: pointer;
+	* {
+		cursor: pointer;
+	}
+
+	.toggle__tumbler {
+		display: grid;
+		align-content: center;
+		height: 31px;
+		width: 51px;
+		background-color: $blue-100;
+		padding: 0 3px;
+		border-radius: 15.5px;
+		transition: all $time;
+		outline: 2px solid transparent;
+
+		&:focus {
+			outline-color: $focus;
+		}
+
+		.circle {
+			position: relative;
+			left: 1px;
+			height: 27px;
+			width: 27px;
+			background-color: $white-100;
+			filter: drop-shadow(0 3px 1px rgba(0, 0, 0, 0.06)) drop-shadow(0 3px 8px rgba(0, 0, 0, 0.15));
+			border-radius: 50%;
+			transition: all $time;
+		}
+	}
+
+	.toggle__tumbler___active {
+		background-color: $blue-500;
+
+		.circle {
+			left: calc(51px - 31px - 3px);
+		}
+	}
+}
+
+.with__label {
+	display: grid;
+	align-items: center;
+	grid-auto-flow: column;
+}
+
+.disabled {
+	cursor: no-drop !important;
+	* {
+		cursor: no-drop !important;
+	}
+
+	.toggle__tumbler {
+		background-color: $blue-300;
+
+		&:focus {
+			outline: none;
+		}
+
+		.circle {
+			background-color: $white-300;
+		}
+	}
+}

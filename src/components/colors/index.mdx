@@ -1,0 +1,79 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import varib from '../styles/colors.scss'
+
+<Meta title="Colors" />
+
+<ColorPalette>
+    <ColorItem
+        title="Red"
+        subtitle={''}
+        colors={{
+            100: varib.red_100,
+            200: varib.red_200,
+            300: varib.red_300,
+            400: varib.red_400,
+            500: varib.red_500,
+            600: varib.red_600,
+        }}
+    />
+    <ColorItem
+        title="Yellow"
+        subtitle={''}
+        colors={{
+            100: varib.yellow_100,
+            200: varib.yellow_200,
+            300: varib.yellow_300,
+            400: varib.yellow_400,
+            500: varib.yellow_500,
+            600: varib.yellow_600,
+        }}
+    />
+    <ColorItem
+        title="Green"
+        subtitle={''}
+        colors={{
+            100: varib.green_100,
+            200: varib.green_200,
+            300: varib.green_300,
+            400: varib.green_400,
+            500: varib.green_500,
+            600: varib.green_600,
+        }}
+    />
+    <ColorItem
+        title="Blue"
+        subtitle={''}
+        colors={{
+            100: varib.blue_100,
+            200: varib.blue_200,
+            300: varib.blue_300,
+            400: varib.blue_400,
+            500: varib.blue_500,
+            600: varib.blue_600,
+            700: varib.blue_700,
+        }}
+    />
+  <ColorItem
+    title="Absolute"
+    subtitle={''}
+    colors={{
+      100: varib.absolute_100,
+      200: varib.absolute_200,
+      300: varib.absolute_300,
+      400: varib.absolute_400,
+      500: varib.absolute_500,
+      600: varib.absolute_600,
+      700: varib.absolute_700,
+      800: varib.absolute_800,
+      900: varib.absolute_900,
+      1000: varib.absolute_1000,
+    }}
+  />
+    <ColorItem
+        title="Focus"
+        subtitle='when the component is in focus'
+        colors={{
+            focus: varib.focus
+        }}
+    />
+</ColorPalette>

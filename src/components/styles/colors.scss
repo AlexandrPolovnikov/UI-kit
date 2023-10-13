@@ -1,0 +1,95 @@
+$white-100: #fff;
+$white-200: #f8f8f8;
+$white-300: #ddd;
+$white-400: #b8b8b8;
+$white-500: #7d7d7d;
+$white-600: #313131;
+
+$gray-100: #ddd;
+
+$black-100: #595959;
+$black-200: #333;
+$black-300: #1f1f1f;
+$black-400: #050505;
+$black-500: #000;
+
+$violet-100: #f7f7fd;
+$violet-200: #e4dff7;
+$violet-300: #5637cc;
+$violet-400: #462b95;
+$violet-500: #200064;
+$violet-600: #150040;
+
+$yellow-100: #fffcf3;
+$yellow-200: #fff8e0;
+$yellow-300: #fff1c2;
+$yellow-400: #ffda58;
+$yellow-500: #ffc600;
+$yellow-600: #e0ae00;
+
+$green-100: #eefff2;
+$green-200: #dbffe4;
+$green-300: #bbf7ba;
+$green-400: #96ffb0;
+$green-500: #26b94b;
+$green-600: #008f24;
+
+$red-100: #fff5f7;
+$red-200: #ffebec;
+$red-300: #ffdadc;
+$red-400: #ff837c;
+$red-500: #f94e45;
+$red-600: #d0332b;
+
+$blue-100: #f7faff;
+$blue-200: #dce8ff;
+$blue-300: #bcd3ff;
+$blue-400: #a6c4ff;
+$blue-500: #357aff;
+$blue-600: #0557f5;
+$blue-700: #003fba;
+
+$gray-100: #a3a3a3;
+$gray-90: #dddddd;
+$gray-30: #f8f8f8;
+
+$focus: #f845fc;
+
+:export {
+	absolute_100: $white-100;
+	absolute_200: $white-200;
+	absolute_300: $white-300;
+	absolute_400: $white-400;
+	absolute_500: $white-500;
+	absolute_600: $black-100;
+	absolute_700: $black-200;
+	absolute_800: $black-300;
+	absolute_900: $black-400;
+	absolute_1000: $black-500;
+	focus: $focus;
+	blue_100: $blue-100;
+	blue_200: $blue-200;
+	blue_300: $blue-300;
+	blue_400: $blue-400;
+	blue_500: $blue-500;
+	blue_600: $blue-600;
+	blue_700: $blue-700;
+	green_100: $green-100;
+	green_200: $green-200;
+	green_300: $green-300;
+	green_400: $green-400;
+	green_500: $green-500;
+	green_600: $green-600;
+	yellow_100: $yellow-100;
+	yellow_200: $yellow-200;
+	yellow_300: $yellow-300;
+	yellow_400: $yellow-400;
+	yellow_500: $yellow-500;
+	yellow_600: $yellow-600;
+	red_100: $red-100;
+	red_200: $red-200;
+	red_300: $red-300;
+	red_400: $red-400;
+	red_500: $red-500;
+	red_600: $red-600;
+}

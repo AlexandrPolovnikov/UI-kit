@@ -1,0 +1,84 @@
+@import "../../styles/colors.scss";
+@import "../../styles/sizes.scss";
+
+.circle__container {
+	place-content: start;
+	justify-self: start;
+	gap: 10px;
+	align-items: center;
+	cursor: pointer;
+	* {
+		cursor: pointer;
+	}
+
+	.label {
+		font-size: 16px;
+		cursor: pointer;
+		color: #333;
+	}
+
+	:hover {
+		outline: 2px solid #7aa7ff;
+	}
+
+	.circle {
+		display: grid;
+		place-content: center;
+		transition: all $time;
+		border-radius: 100%;
+		background-color: $white-100;
+		&:focus {
+			outline: 2px solid $focus;
+		}
+
+		.switch {
+			border-radius: 100%;
+			transition: all $time;
+		}
+
+		.small {
+			width: 12px;
+			height: 12px;
+		}
+		.medium {
+			width: 18px;
+			height: 18px;
+		}
+		.large {
+			width: 24px;
+			height: 24px;
+		}
+		.switch__disable {
+			background-color: $white-300;
+		}
+		.switch__color__default {
+			background-color: $blue-500;
+		}
+	}
+
+	.small {
+		width: 18px;
+		height: 18px;
+	}
+	.medium {
+		width: 24px;
+		height: 24px;
+	}
+	.large {
+		width: 30px;
+		height: 30px;
+	}
+	.thin {
+		border: 1px solid $white-300;
+	}
+	.thick {
+		border: 2px solid $white-300;
+	}
+
+	.circle__border__disable {
+		border-color: #7aa7ff;
+	}
+	.circle__border__color__default {
+		border-color: #7aa7ff;
+	}
+}
