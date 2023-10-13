@@ -1,6 +1,8 @@
 {
   "name": "@prometey/ui-kit-test-lib",
-  "publishConfig": {},
+  "publishConfig": {
+    "registry": "https://www.npmjs.com/~prometey"
+  },
   "version": "1.0.1",
   "description": "",
   "main": "dist/esm/index.js",
@@ -15,7 +17,18 @@
     "build-storybook": "build-storybook",
     "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandrPolovnikov/UI-kit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexandrPolovnikov/UI-kit"
+  },
   "devDependencies": {
+    "homepage": "https://github.com/AlexandrPolovnikov/UI-kit",
     "@babel/core": "^7.20.12",
     "@rollup/plugin-terser": "^0.3.0",
     "@rollup/plugin-typescript": "^11.0.0",
