@@ -1,0 +1,64 @@
+@import "/styles/page-styles/template";
+@import "/styles/global/colors";
+
+.download__zone {
+    width: 100%;
+    padding: 22px 0 32px;
+    border: 2px dashed $white-400;
+    border-radius: $medium-radius;
+    min-height: 196px;
+    justify-content: center;
+    @media screen and (max-width: $tablet) {
+        padding: 0;
+        border: none;
+        min-height: 0;
+    }
+
+    .download__content {
+        justify-items: center;
+        align-items: center;
+        gap: 15px;
+        grid-template-rows: repeat(3, auto);
+
+        @media screen and (max-width: $tablet) {
+            gap: 8px;
+        }
+
+        .download__instruction {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            border-radius: $light-radius;
+
+            @media screen and (max-width: $tablet) {
+                flex-direction: row;
+                border: 2px solid $blue-400;
+                width: 100%;
+                min-height: 44px;
+                gap: 8px;
+            }
+
+            .instruction__title {
+                text-align: center;
+                @media screen and (max-width: $tablet) {
+                    display: none;
+                }
+            }
+            .instruction__title__tablet {
+                display: none;
+                @media screen and (max-width: $tablet) {
+                    display: inline;
+                    color: $blue-400;
+                }
+            }
+        }
+
+        .download__paragraph {
+            text-align: center;
+            max-width: 300px;
+            color: #b8b8b8;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import "./checkbox-input.scss";
+import classes from "./checkbox-input.module.scss";
 
 interface Props {
 	isActive: boolean;
@@ -19,10 +19,10 @@ interface Props {
 const CheckboxInput = ({
 	isActive,
 	changeEvent,
-	activeColor = "square__color__active",
-	offColor = "square__color__off",
-	borderColor = "border__color",
-	borderColorHover = "border__hover",
+	activeColor = classes.square__color__active,
+	offColor = classes.square__color__off,
+	borderColor = classes.border__color,
+	borderColorHover = classes.border__hover,
 	size = "medium",
 	fillColor = "#fff",
 	isDisabled = false,
@@ -37,13 +37,13 @@ const CheckboxInput = ({
 	}
 
 	return (
-		<div className={`"input__container" ${className} ${isDisabled ? "disabled__component" : ""} column`}>
+		<div className={`${classes.input__container} ${className} ${isDisabled ? classes.disabled__component : ""} column`}>
 			<div
 				className={`
-					'square'	
+					${classes.square}	
 					${isActive ? activeColor : offColor && borderColor}
 					${borderColorHover}
-					${[size]}			
+					${classes[size]}			
 					center-content
 				`}
 				tabIndex={0}
@@ -69,10 +69,10 @@ const CheckboxInput = ({
 			</div>
 			{label && (
 				<p
-					className={`label__element ${classNameLabel}`}
+					className={`${classes.label__element} ${classNameLabel}`}
 					onClick={() => !isDisabled && changeEvent?.()}
 				>
-					{label} {isRequired && <span className="span__element">*</span>}
+					{label} {isRequired && <span className={`${classes.span__element}`}>*</span>}
 				</p>
 			)}
 		</div>

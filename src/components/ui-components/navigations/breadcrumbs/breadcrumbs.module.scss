@@ -1,0 +1,56 @@
+.crumb {
+    display: inline-flex;
+    align-items: center;
+
+    a {
+        color: $white-500;
+        margin: 0 4px;
+    }
+
+    svg {
+        display: flex;
+        justify-content: center;
+        margin: 0 6px;
+    }
+
+    &:hover {
+        a {
+            color: $blue-500;
+        }
+        svg circle {
+            fill: $blue-500;
+        }
+    }
+
+    &:focus-within {
+        a {
+            color: $blue-400;
+        }
+        svg circle {
+            fill: $blue-400;
+        }
+        border-radius: 4px;
+    }
+
+    &:disabled {
+        a {
+            color: $blue-200;
+        }
+        svg circle {
+            fill: $blue-200;
+        }
+    }
+}
+
+.active {
+    a {
+        color: $blue-500;
+    }
+    svg circle {
+        fill: $blue-500;
+    }
+}
+
+.breadcrumbs {
+    display: flex;
+}

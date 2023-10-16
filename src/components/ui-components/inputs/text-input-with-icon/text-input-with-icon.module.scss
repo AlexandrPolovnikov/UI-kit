@@ -1,0 +1,40 @@
+@import "/styles/global/colors";
+@import "/styles/global/sizes";
+
+
+.input__container {
+  position: relative;
+  height: 100%;
+
+  input {
+    height: 100%;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 36px 0 10px;
+    outline: 1px solid transparent;
+    transition: all $time;
+
+    &:focus {
+      outline-color: $violet-400;
+    };
+  };
+
+  .search {
+    display: grid;
+    align-content: center;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+  };
+};
+
+.disabled__component {
+  cursor: no-drop;
+  .input {
+    cursor: no-drop;
+    background-color: $blue-100!important;
+    color: $blue-300;
+  };
+};
