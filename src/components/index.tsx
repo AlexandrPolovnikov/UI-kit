@@ -4,7 +4,6 @@ import ToggleButton from "./buttons/toggle-button/index";
 import CheckboxInput from "./inputs/checkbox-input/index";
 import NumberInput from "./inputs/number-input/index";
 import PasswordInput from "./inputs/password-input/index";
-import PhoneInput from "./inputs/phone-input/index";
 import RadioInput from "./inputs/radio-input/index";
 import SearchInput from "./inputs/search-input/index";
 export {
@@ -14,7 +13,6 @@ export {
   CheckboxInput,
   NumberInput,
   PasswordInput,
-  PhoneInput,
   RadioInput,
   SearchInput,
 };
