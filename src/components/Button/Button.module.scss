@@ -1,11 +1,11 @@
 .button {
   cursor: pointer;
   border: none;
-  background: var(--primary);
-  color: var(--secondaryTextColor);
+  background: blue;
+  color: black;
 
   font-size: 2.5rem;
-  font-weight: var(--semiBold);
+  font-weight: 24px;
   padding: 1rem 2rem;
   border-radius: 0.2rem;
 }
